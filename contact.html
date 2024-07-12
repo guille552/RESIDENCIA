@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Tienda Online</title>
+    <link rel="stylesheet" href="css/style_contact.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="index.html#products">Productos</a>
+        <a href="about.html">Sobre Nosotros</a>
+        <a href="contact.html">Contacto</a>
+    </div>
+
+    <div class="contact">
+        <h2>Contacto</h2>
+        <p>Email: contacto@mitienda.com</p>
+        <p>Teléfono: +123 456 7890</p>
+
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Tienda Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Gracias por contactarnos. Nos pondremos en contacto contigo pronto.');
+        });
+    </script>
+</body>
+</html>
