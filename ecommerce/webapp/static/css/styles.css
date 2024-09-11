@@ -87,3 +87,8 @@ footer {
         padding: 20px;
     }
 }
+
+/* Cambia el color del botón al pasar el ratón */
+.search-button:hover{
+    background-color: #45a049;
+}
