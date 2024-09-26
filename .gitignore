@@ -1,0 +1,21 @@
+# Archivos de migración
+*/migrations/
+!*/migrations/__init__.py
+
+# Archivos compilados de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Archivos de caché
+*.swp
+*.swo
+*~
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de bases de datos locales
+*.sqlite3
