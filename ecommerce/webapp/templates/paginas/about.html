@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - La casa de aluminio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_about.css">
+
+    <style>
+        .navbar-custom {
+            background: linear-gradient(to right, #007bff, #dc3545);
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <a class="navbar-brand" href="{% url 'index' %}">La casa de aluminio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#products">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="about" class="container my-5">
+        <h2 class="text-center mb-4">Sobre Nosotros</h2>
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Nuestra Historia">
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestra Historia</h3>
+                <p>Comenzamos nuestra tienda en 2020 con el objetivo de ofrecer productos de alta calidad a precios accesibles.</p>
+            </div>
+        </div>
+        <div class="row mb-4 align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Nuestra Misión">
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestra Misión</h3>
+                <p>Proporcionar productos de la mejor calidad y brindar una excelente atención al cliente.</p>
+            </div>
+        </div>
+        <div class="row mb-4 align-items-center">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Nuestro Equipo">
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestro Equipo</h3>
+                <p>Contamos con un equipo dedicado y apasionado que trabaja día a día para ofrecer lo mejor a nuestros clientes.</p>
+            </div>
+        </div>
+        <div class="row mb-4 align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/400x300" class="img-fluid" alt="Nuestros Valores">
+            </div>
+            <div class="col-md-6">
+                <h3>Nuestros Valores</h3>
+                <p>Integridad, calidad y compromiso son los pilares que sostienen nuestra empresa.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 La casa de aluminio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
